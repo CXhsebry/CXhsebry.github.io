@@ -1,0 +1,167 @@
+*,html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navbar{
+    background: #222;
+    margin: 0;
+    padding: 20px 30px;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: whitesmoke;
+  
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.tombol{
+    display: none;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.tombol:hover{
+    cursor: pointer;
+}
+
+.menu{
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li{
+    padding-left: 0;
+    margin-left: 10px;
+}
+
+.menu li a{
+    padding: 10px;
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        display: none;
+    }
+
+    .menu.aktif{
+        display: inline-block;
+        position: absolute;
+        top: 64px;
+        background: #222;
+        padding: 10px 20px;
+        right: 0;
+        left: 0;
+    }
+
+    .menu.aktif li a{
+        padding: 10px;
+        display: inline-block
+    }
+
+    .tombol{
+        display: block;
+    }
+}
+
+.cente{
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: large;
+    color: #222;
+}
+
+span{
+    color: rgba(9, 9, 87, 0.649);
+    margin: 5px;
+}
+
+.animasi{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.anima{
+    color:goldenrod;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.bg{
+    background-color: whitesmoke;
+}
+
+img{
+    width: 70%;
+    height: auto;
+    float: right;
+    margin: 5px;
+}
+
+#hero{
+height: 720px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+}
+
+.hero-right{
+    display: flex;
+    justify-content: center;
+}
+
+    .hero-name{
+        font-size: 1.3rem;
+        font-weight: 800;
+        margin: .5rem 0 1rem;
+    }
+
+    .pre-title{
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        color: var(--secondarytextcolor);
+        position: relative;
+        padding-left: 40px;
+        width: fit-content;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    .icn-color{
+      color: rgb(124, 23, 95);
+    }
+
+    .icn-txt{
+        font-size: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .gridja{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    
